@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Pythonic Implementation of Anagram search
 """
@@ -39,4 +41,4 @@ assert is_anagram("anagram", "not a gram") == False
 assert is_anagram("anagram", "na a marg") == True
 assert is_anagram("William Shakespeare", "I am \t a weakish speller") == True
 assert is_anagram("Madam Curie", "Radium came") == True
-assert is_anagram("notagram", "notaflam") == False
+assert is_anagramg("notagram", "notaflam") == False
