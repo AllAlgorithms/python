@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int fatorial(int num)
+{
+    int count, fat =1;
+    for(count = num; count > 1; cont--)
+    {
+        fat *= count;
+    }
+    return(fat);
+}
+
+int main()
+{
+    int fat, num;
+    scanf("%i",&num);
+    fat=fatorial(num);
+    printf("%i",fat);
+    return 0;
+}
