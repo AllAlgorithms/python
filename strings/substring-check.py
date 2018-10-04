@@ -1,12 +1,8 @@
-# function to check if small string is  
-# there in big string 
-def check(string, sub_str): 
-    if (string.find(sub_str) == -1): 
-        print("NO") 
-    else: 
-        print("YES") 
-            
-# driver code 
-string = "" #Enter string
-sub_str ="" #Enter sub string
-check(string, sub_str)
+def substring_check(string, sub_str):
+    return sub_str in string
+
+string = "Hello everyone"
+sub_str_present ="llo e"
+sub_str_absent ="abcd"
+print(substring_check(string, sub_str_present)) # True
+print(substring_check(string, sub_str_absent)) # False
