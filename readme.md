@@ -40,3 +40,10 @@ To the extent possible under law, [Carlos Abraham](https://go.abranhe.com/github
 
 
 [mit-license]: https://cdn.abraham.gq/projects/algorithms/mit-license.png
+
+<div align="center">
+	<a href="https://github.com/abranhe/algorithms">
+		<img src="https://cdn.abranhe.com/projects/algorithms/logo.svg" width="50px">
+	</a>
+  <br>
+</div>
