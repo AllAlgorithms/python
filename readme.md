@@ -19,16 +19,20 @@
 ## Contents
 
 - [Arithmetic Analysis](arithmetic-analysis)
-- [Graphs](graphs)
-- [Math](math)
 - [Ciphers](ciphers)
+- [Cryptography](cryptography)
 - [Data Structures](data-structures)
 - [Dynamic Programming](dynamic-programming)
+- [Greedy](greedy)
+- [Graphs](graphs)
+- [Math](math)
+- [Neutral Network](neutral-network)
 - [Hashes](hashes)
 - [Searches](searches)
 - [Sorting](sorting)
 - [Strings](strings)
 - [Traversals](traversals)
+- [Others](others)
 
 ## License
 
