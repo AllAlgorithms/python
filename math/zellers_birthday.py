@@ -1,3 +1,4 @@
+import argparse
 """Zellers Congruence Birthday Algorithm
     Find out what day of the week you were born on
     Accepts birthday as a string in mm-dd-yyyy format 
@@ -37,3 +38,9 @@ def zeller(bday):
     for i in days:
         if f == int(i):
             print("Your birthday " + bday + ", was a " + days[i] + "!")
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Find out what day of the week you were born on Accepts birthday as a string in mm-dd-yyyy or mm/dd/yyyy format')
+    parser.add_argument('bday', type=str, help='Date as a string (mm-dd-yyyy or mm/dd/yyyy)')
+    args = parser.parse_args()
+    zeller(args.bday)
