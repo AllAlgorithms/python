@@ -1,27 +1,14 @@
-#quick sort implementation in Python by Neville Antony
+"""
+Here is the implementation of quicksort algorithm in python by Pramod Bharti
+quick_sort() function takes an unsorted array and prints sorted array 
+"""
+def quick_sort(arr):
+	if len(arr) <= 1:
+		return arr
+	pivot = arr[len(arr) // 2]
+	left = [x for x in arr if x < pivot]
+	middle = [x for x in arr if x == pivot]
+	right = [x for x in arr if x > pivot]
+	return quick_sort(left) + middle + quick_sort(right)
 
-def partition(arr, down, up): 
-    i = ( down - 1 )         
-    pivot = arr[up]    
-  
-    for j in range(down, up): 
-        if   arr[j] <= pivot: 
-            i = i+1 
-            arr[i],arr[j] = arr[j],arr[i] 
-  
-    arr[i+1],arr[up] = arr[up],arr[i+1] 
-    return ( i+1 ) 
- 
-def quickSort(arr, down, up): 
-    if down< up: 
-        pi = partition(arr, down, up) 
-        quickSort(arr, down, pi-1) 
-        quickSort(arr, pi+1, up) 
-  
-arr = [91, 72, 68, 23, 37, 55] 
-n = len(arr) 
-quickSort(arr,0,n-1) 
-print("The sorted array is :") 
-for i in range(n): 
-    print ("%d" %arr[i]), 
-  
+print (quick_sort([5,2,8,3,9,12,43])) # This will print [2,3,5,8,9,12,43]
