@@ -29,9 +29,9 @@
 	<br>
 </div>
 
-## Contents
+See all algorithms and their explanation and categories at [@AllAlgorithms/algorithms](https://github.com/abranhe/algorithms). Check out the Python Library for The All ▲lgorithms project at [@abranhe/python-lib](https://github.com/abranhe/python-lib)
 
-> See all algorithms and their categories at [@AllAlgorithms/algorithms](https://github.com/abranhe/algorithms).
+## Contents
 
 - [Artificial Intelligence](#artificial-intelligence)
 - [Backtracking](#backtracking)
