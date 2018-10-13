@@ -1,3 +1,11 @@
+# -*- coding: UTF-8 -*-
+#
+# Lowest Common Ancestor
+# The All ▲lgorithms library for python
+#
+# Contributed by: Anish Narkhede
+# Github: @anish03
+#
 class Node:
     def __init__(self,data):
         self.data = data
@@ -55,7 +63,7 @@ class BST:
         else:
             i = max(self.get_height(node.left),self.get_height(node.right)) + 1
         return i
-  
+
     def find_path(self,root,path,k):
         if not root:
             return False

@@ -1,49 +1,141 @@
 <div align="center">
+	<br>
+	<br>
+	<br>
 	<img width="400"  src="http://konpa.github.io/devicon/devicon.git/icons/python/python-original.svg">
+	<br>
+	<br>
 	<br>
 	<br>
 	<img src="https://cdn.abranhe.com/projects/algorithms/algorithms.svg" width="400px">
 	<br>
-  <p>All ▲lgorithms implemented in C Python</p>
-	<a href="https://algorithms.abranhe.com"><img src="https://img.shields.io/badge/All-%E2%96%B2llgorithms-700606.svg"></a>
-	<a href="https://github.com/abranhe/algorithms/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abranhe/algorithms.svg" /></a>
+	<br>
+	<br>
+  <p>All ▲lgorithms implemented in Python</p>
+	<br>
+	<a href="https://allalgorithms.com"><img src="https://cdn.abranhe.com/projects/algorithms/badge.svg"></a>
+	<a href="https://github.com/abranhe/algorithms/blob/master/license"><img src="https://img.shields.io/github/license/abranhe/algorithms.svg" /></a>
 	<a href="https://cash.me/$abranhe"><img src="https://cdn.abraham.gq/badges/cash-me.svg"></a>
 	<a href="https://www.patreon.com/abranhe"><img src="https://cdn.abraham.gq/badges/patreon.svg" /></a>
 	<a href="https://paypal.me/abranhe/10"><img src="https://cdn.abraham.gq/badges/paypal.svg" /></a>
 	<br>
   <br>
-	<a href="https://algorithms.abranhe.com"><code>algorithms.abranhe.com</code></a>
+	<br>
+	<br>
+	<a href="https://allalgorithms.com"><code>allalgorithms.com</code></a>
+	<br>
+	<br>
+	<br>
+	<br>
 </div>
-
 
 ## Contents
 
-- [Arithmetic Analysis](arithmetic-analysis)
-- [Ciphers](ciphers)
-- [Cryptography](cryptography)
-- [Data Structures](data-structures)
-- [Dynamic Programming](dynamic-programming)
-- [Greedy](greedy)
-- [Graphs](graphs)
-- [Math](math)
-- [Neutral Network](neutral-network)
-- [Hashes](hashes)
-- [Searches](searches)
-- [Sorting](sorting)
-- [Strings](strings)
-- [Traversals](traversals)
-- [Others](others)
+> See all algorithms and their categories at [@AllAlgorithms/algorithms](https://github.com/abranhe/algorithms).
+
+- [Artificial Intelligence](#artificial-intelligence)
+- [Backtracking](#backtracking)
+- [Bit Manipulation](#bit-manipulation)
+- [Cellular Automaton](#cellular-automaton)
+- [Ciphers](#ciphers)
+- [Computational Geometry](#computational-geometry)
+- [Cryptography](#cryptography)
+- [Data Structures](#data-structures)
+- [Divide and conquer](#divide-and-conquer)
+- [Dynamic Programming](#dynamic-programming)
+- [Gaming Theory](#gaming-theory)
+- [Graphs](#graphs)
+- [Greedy Algorithms](#greedy-algorithms)
+- [Math](#math)
+- [Networking](#networking)
+- [Numerical Analysis](#numerical-analysis)
+- [Operating system](#operating-system)
+- [Randomized Algorithms](#randomized-algorithms)
+- [Searches](#searches)
+- [Selections Algorithms](#selections-algorithms)
+- [Sorting](#sorting)
+- [Strings](#strings)
+- [Online Challenges](#online-challenges)
+- [Others](#others)
+
+## Cryptography
+
+- [Advanced Encryption Standard](cryptography/aes.py)
+- [Caesar Cipher](cryptography/caesar_cipher.py)
+- [Playfair Cipher](cryptography/playfair.py)
+
+##  Data Structures
+
+- [Hashes](#hashs)
+- [Linked Lists](#linked-lists)
+- [Trees](#trees)
+
+###  Hashes
+- [Hash Table](data-structures/hashs/hash_table.py)
+
+### Linked Lists
+
+- [Linked List](data-structures/linked-lists/linked_list.py)
+
+### Trees
+
+- [AVL Tree](data-structures/trees/binary_search_tree.py)
+- [Binary Search Tree](data-structures/trees/binary_search_tree.py)
+- [Heap](data-structures/trees/heap.py)
+- [Lowest Common Ancestor](data-structures/trees/lowest_common_ancestor.py)
+
+<!--  @TODO
+
+##  Dynamic Programming
+
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+- [](dynamic-programming/.py)
+
+##  Graphs
+
+- [](graphs/.py)
+
+##  Greedy
+
+- [](greedy/.py)
+
+##  Math
+
+- [](math/.py)
+
+##  Searches
+
+- [](searches/.py)
+
+##  Sorting
+
+- [](sorting/.py)
+
+##  Strings
+
+- [](strings/.py)
+
+-->
+
+## Maintainers
+
+| [![M1][m1-i]][m1] | [![M2][m2-i]][m2] | [![M3][m3-i]][m3] |
+| :-: | :-: | :-: |
+| [Carlos Abraham][m1] | [Pablo Trinidad][m2] | [Martmists][m3] |
 
 ## License
 
-This work is licensed under a [MIT License](https://github.com/abranhe/algorithms/blob/master/LICENSE)
+This work is released under [MIT License](https://github.com/abranhe/algorithms/blob/master/LICENSE)
 
-[![MIT IMG][mit-license]]((https://github.com/abranhe/algorithms/blob/master/LICENSE))
+[![MIT IMG][mit-license]]((https://github.com/abranhe/algorithms/blob/master/LICENSE)
 
 To the extent possible under law, [Carlos Abraham](https://go.abranhe.com/github) has waived all copyright and related or neighboring rights to this work.
 
-
-[mit-license]: https://cdn.abraham.gq/projects/algorithms/mit-license.png
 
 <div align="center">
 	<a href="https://github.com/abranhe/algorithms">
@@ -51,3 +143,14 @@ To the extent possible under law, [Carlos Abraham](https://go.abranhe.com/github
 	</a>
   <br>
 </div>
+
+<!----------------------- Markdown Links ----------------------------->
+[mit-license]: https://cdn.abraham.gq/projects/algorithms/mit-license.png
+
+<!----------------------- Maintainers -------------------------------->
+[m1]: https://github.com/abranhe
+[m1-i]: https://avatars2.githubusercontent.com/u/21347264?s=70
+[m2]: https://github.com/pablotrinidad
+[m2-i]: https://avatars1.githubusercontent.com/u/5308050?s=70
+[m3]: https://github.com/martmists
+[m3-i]: https://avatars1.githubusercontent.com/u/16361449?s=70
