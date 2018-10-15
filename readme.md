@@ -70,19 +70,20 @@ See all algorithms and their explanation and categories at [@AllAlgorithms/algor
 - [Linked Lists](#linked-lists)
 - [Trees](#trees)
 
-###  Hashes
+####  Hashes
 - [Hash Table](data-structures/hashs/hash_table.py)
 
-### Linked Lists
+#### Linked Lists
 
 - [Linked List](data-structures/linked-lists/linked_list.py)
 
-### Trees
+#### Trees
 
 - [AVL Tree](data-structures/trees/binary_search_tree.py)
 - [Binary Search Tree](data-structures/trees/binary_search_tree.py)
 - [Heap](data-structures/trees/heap.py)
 - [Lowest Common Ancestor](data-structures/trees/lowest_common_ancestor.py)
+- [Minimum Height Binary Search Tree](data-structures/trees/min_height_bst.py)
 
 <!--  @TODO
 
