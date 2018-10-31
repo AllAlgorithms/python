@@ -3,7 +3,7 @@
   My github github.com/LuizGuerra
 '''
 
-class Stack {
+class Stack:
   
   def __init__ (.self):
   	head = null
@@ -22,8 +22,7 @@ class Stack {
   	n = head
   	head = head.next
   	return n.element
-  
-}
+
 
 class Node (e):
   __init__ (.self, e):
