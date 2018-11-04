@@ -127,9 +127,33 @@ class Live(Cell):
         return Dead()
 
 
-def glider_example():
-    from textwrap import dedent
+from textwrap import dedent
 
+def run_string_example(
+    *,
+    seed_string=None,
+    seed_name=None,
+    num_gens=10
+):
+    seed_game = GameOfLife.from_str(seed_string)
+    if seed_name is None:
+        seed_name = f'A {seed_game.height}x{seed_game.width} grid'
+    print(dedent(f'''
+        =========================
+        | Conway's Game of Life |
+        {'':=^50}
+        | {f'Starting with seed: "{seed_name:.10}"': <46.46} |
+        | {f'Running for {str(num_gens):1.3} generations.': <46.46} |
+        {'':=^50}
+    '''))
+    latest_generation = seed_game
+    for gen_num in range(1, num_gens + 1):
+        print(f'Generation {gen_num}:')
+        print(str(latest_generation))
+        latest_generation = latest_generation.next_generation()
+    print('Done')
+
+def glider_example():
     glider_string = dedent('''
         ··0····
         0·0····
@@ -138,20 +162,24 @@ def glider_example():
         ·······
         ·······
     ''')
+    run_string_example(
+        seed_string=glider_string,
+        seed_name='Glider',
+        num_gens=15
+    )
 
-    glider_game = GameOfLife.from_str(glider_string)
-    num_gens = 15
-    print(dedent(f'''
-        Conway's Game of Life
-        Starting with seed: "Glider"
-        Running for {num_gens} generations.
-    '''))
-    for gen_num in range(1, num_gens + 1
-        ):
-        print(f'Generation {gen_num}:')
-        print(str(glider_game))
-        glider_game = glider_game.next_generation()
-    print('Done')
+def question_example():
+    from textwrap import dedent
+
+    game_string = dedent('''
+        ·0·
+        0·0
+    ''')
+    run_string_example(
+        seed_string=game_string,
+        num_gens=4
+    )
 
 if __name__ == '__main__':
     glider_example()
+    question_example()
