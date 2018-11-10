@@ -125,9 +125,9 @@ See all algorithms and their explanation and categories at [@AllAlgorithms/algor
 
 ## Maintainers
 
-| [![M1][m1-i]][m1] | [![M2][m2-i]][m2] | [![M3][m3-i]][m3] |
-| :-: | :-: | :-: |
-| [Carlos Abraham][m1] | [Pablo Trinidad][m2] | [Martmists][m3] |
+| [![M1][m1-i]][m1] | 
+| :-: | 
+| [Carlos Abraham][m1] | 
 
 ## License
 
@@ -152,7 +152,3 @@ To the extent possible under law, [Carlos Abraham](https://go.abranhe.com/github
 <!----------------------- Maintainers -------------------------------->
 [m1]: https://github.com/abranhe
 [m1-i]: https://avatars2.githubusercontent.com/u/21347264?s=70
-[m2]: https://github.com/pablotrinidad
-[m2-i]: https://avatars1.githubusercontent.com/u/5308050?s=70
-[m3]: https://github.com/martmists
-[m3-i]: https://avatars1.githubusercontent.com/u/16361449?s=70
