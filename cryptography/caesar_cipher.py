@@ -1,4 +1,6 @@
 import sys
+
+
 def encrypt(strng, key):
     encrypted = ''
     for x in strng:
@@ -17,6 +19,7 @@ def decrypt(strng, key):
             indx = indx + 95
         decrypted = decrypted + chr(indx)
     return decrypted
+
 
 def brute_force(strng):
     key = 1
@@ -42,13 +45,13 @@ def main():
     while True:
         choice = input("What would you like to do?: ")
         if choice not in ['1', '2', '3', '4']:
-            print ("Invalid choice")
+            print("Invalid choice")
         elif choice == '1':
             strng = input("Please enter the string to be ecrypted: ")
             while True:
                 key = int(input("Please enter off-set between 1-94: "))
                 if key in range(1, 95):
-                    print (encrypt(strng, key))
+                    print(encrypt(strng, key))
                     main()
         elif choice == '2':
             strng = input("Please enter the string to be decrypted: ")
@@ -62,7 +65,9 @@ def main():
             brute_force(strng)
             main()
         elif choice == '4':
-            print ("Goodbye.")
+            print("Goodbye.")
             sys.exit()
 
-main()
+
+if __name__ == "__main__":
+    main()
