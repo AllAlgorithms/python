@@ -1,3 +1,10 @@
+'''
+Layout: algorithms
+Title : Graham Scan Algorithm
+Author: RadientBrain
+'''
+
+
 from random import randint
 import matplotlib.pyplot as plt
 
