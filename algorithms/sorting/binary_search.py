@@ -25,10 +25,11 @@ def binary_search(value, list_to_search):
     search_value = -1
     max_index = len(list_to_search) - 1
     min_index = 0
-    middle_index = int(math.floor( (max_index + min_index) / 2))
-    current_element = list_to_search[middle_index]
-
+   
     while max_index >= min_index:
+        
+        middle_index = int(math.floor( (min_index + max_index) / 2))
+        current_element = list_to_search[middle_index]
 
         if current_element == value:
             return current_element
@@ -38,10 +39,7 @@ def binary_search(value, list_to_search):
 
         elif value < current_element:
             max_index = middle_index - 1
-            
-        middle_index = int(math.floor( (min_index + max_index) / 2))
-        current_element = list_to_search[middle_index]
-
+          
     return search_value
 
 
