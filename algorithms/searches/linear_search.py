@@ -10,4 +10,4 @@ def linear_search(arr, item):
 
 # Tests
 
-print(search([1,2,3,4,5], 3))
+print(linear_search([1,2,3,4,5], 3))
