@@ -1,6 +1,3 @@
-from typing import List
-
-
 def swap(a:int,b:int) -> list :
     a=a^b
     b=b^a
