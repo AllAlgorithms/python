@@ -411,6 +411,6 @@ To the extent possible under law, [Abraham Hernandez (@abranhe)](https://go.abra
 <div align="center">
 	<a href="https://github.com/abranhe/algorithms">
 		<img src="https://cdn.abranhe.com/projects/algorithms/logo.svg" width="50px">
-	</a>
+	</a> 
   <br>
 </div>
