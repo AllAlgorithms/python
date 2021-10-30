@@ -406,11 +406,11 @@ just a paper and pencil.
 
 This work is released under MIT License.
 
-To the extent possible under law, [Abraham Hernandez (@abranhe)](https://go.abranhe.com/github) has waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, [Abraham Hernandez (@abranhe)](https://go.abranhe.com/github) has waived and all copyright and related or neighboring rights to this work.
 
 <div align="center">
 	<a href="https://github.com/abranhe/algorithms">
 		<img src="https://cdn.abranhe.com/projects/algorithms/logo.svg" width="50px">
-	</a>
+	</a> 
   <br>
 </div>
