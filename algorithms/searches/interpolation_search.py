@@ -79,9 +79,29 @@ def __assert_sorted(collection):
         raise ValueError('Collection must be sorted')
     return True
 
+import unittest
+class Testinterpolation_search(unittest.TestCase):
+    def testMCC(self):
+        self.assertEqual(None, interpolation_search([2, 5, 7, 8], 12))
+        self.assertEqual(None, interpolation_search([2, 5, 7, 8], 0))
+        self.assertEqual(1, interpolation_search([2, 5, 7, 8], 5))
+        self.assertEqual(2, interpolation_search([3, 6, 12, 14, 17], 12))
+        self.assertEqual(1, interpolation_search([3, 6, 12, 14, 17], 6))
+
+    
+    def testAllDUpath(self):
+        self.assertEqual(None, interpolation_search([2, 5, 7, 8], 12))
+        self.assertEqual(None, interpolation_search([2, 5, 7, 8], 0))
+        self.assertEqual(1, interpolation_search([2, 5, 7, 8], 5))
+        self.assertEqual(2, interpolation_search([3, 6, 12, 14, 17], 12))
+        self.assertEqual(1, interpolation_search([3, 6, 12, 14, 17], 6))
+        self.assertEqual(3, interpolation_search([5, 7, 11, 15, 19], 15))
+
 
 if __name__ == '__main__':
     import sys
+    
+    unittest.main()
 
     user_input = raw_input('Enter numbers separated by comma:\n').strip()
     collection = [int(item) for item in user_input.split(',')]
