@@ -1,40 +1,47 @@
 
+class Node:
+    def __init__(self,_data,_next=None):
+        self.data = _data
+        self.next = _next
+    
+    def __str__(self):
+        return f"Node({self.data})"
 
 
 class Stack:
 
-    def __init__(self, size):
-        self.size = size
-        self.top = -1
-        self.arr = [0]*size
+    def __init__(self):
+        self.top = None
 
     def isEmpty(self):
-        return self.top == -1
+        return self.top is None
 
-    def isFull(self):
-        return self.top == self.size-1
-
-    def push(self, value):
-        if not self.isFull():
-            self.top += 1
-            self.arr[self.top] = value
+    def push(self, _data):
+        node = Node(_data)
+        node.next = self.top
+        self.top = node
 
     def pop(self):
-        if not self.isEmpty():
-            self.top -= 1
+        if self.isEmpty() is not None:
+            returnValue = self.top
+            self.top = self.top.next
+            return returnValue
 
-    def show(self):
-        for i in range(self.top):
-            print(self.arr[i], end=", ")
-        if not self.isEmpty():
-            print(self.arr[self.top])
+    def __str__(self):
+        res = ""
+        node = self.top
+        while node:
+            res += str(node.data) + " | "
+            node = node.next
+        return res[::-1]
 
 
 if __name__ == "__main__":
-    s = Stack(10)
+    s = Stack()
     s.push(8)
     s.push(4)
+    print(s)
     s.pop()
     s.push(11)
     s.push(3)
-    s.show()
+    print(s)
