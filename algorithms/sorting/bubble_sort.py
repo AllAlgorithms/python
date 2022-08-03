@@ -1,24 +1,36 @@
 # Python implementation of bubble sort
 #
 # Author: Carlos Abraham Hernandez
+# Current Implementation by: Gabriel de Souza Nunes
 
 def bubbleSort(arr):
 	n = len(arr)
+	end = n - 1
+	change = True
+	
+	while(change):
+		change = False
 
-	for i in range(n):
-		for j in range(0, n-i-1):
-			if arr[j] > arr[j+1] :
-				arr[j], arr[j+1] = arr[j+1], arr[j]
+		for i in range(end):
+			if arr[i] > arr[i + 1]:
+				aux = arr[i]
+				arr[i] = arr[i + 1]
+				arr[i + 1] = aux
+
+				change = True
+				k = i
+	end = k
+		
 
 def printArray(arr):
-	for i in range(len(arr)):
-	    print ("%d" %arr[i]),
+	for num in arr:
+	    print (num)
 
 # Test
 arr = [46, 24, 33, 10, 2, 81, 50]
 print ("Unsorted Array:")
 printArray(arr)
-print ('\n')
+print ()
 
 bubbleSort(arr)
 
