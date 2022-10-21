@@ -1,10 +1,7 @@
-def gcd(A, B):
-    if B>A:
-        A, B = B, A
-    while B!=0:
-        temp = B
-        B = A%B
-        A = temp
-    return A
+#EUCLIDEAN ALGORITHM FOR GCD CALCULATION
+def computeGCD(x,y):
+    while(y):
+       x,y= y, x % y
+    return abs(x)
 
-print(gcd(10,20))
+print(computeGCD(10,20))
