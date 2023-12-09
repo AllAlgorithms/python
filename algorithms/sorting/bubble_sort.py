@@ -1,26 +1,16 @@
 # Python implementation of bubble sort
 #
-# Author: Carlos Abraham Hernandez
+# Author:Abdur rahman
 
-def bubbleSort(arr):
-	n = len(arr)
+# bubble sort algorithm in easy way 
+# bubble sort happens like this, we have to iterate over the array and swap it. 
 
-	for i in range(n):
-		for j in range(0, n-i-1):
-			if arr[j] > arr[j+1] :
-				arr[j], arr[j+1] = arr[j+1], arr[j]
-
-def printArray(arr):
-	for i in range(len(arr)):
-	    print ("%d" %arr[i]),
-
-# Test
-arr = [46, 24, 33, 10, 2, 81, 50]
-print ("Unsorted Array:")
-printArray(arr)
-print ('\n')
-
-bubbleSort(arr)
-
-print ("Sorted Array:")
-printArray(arr)
+def bubbleSortAlgo(arr):
+    for j in range(len(arr) - 1):
+    	for i in range(len(arr) - 1 - j):
+         if arr[i] > arr[i + 1]:
+            arr[i + 1], arr[i] = arr[i], arr[i +1]
+    return arr
+        
+arr = [23, 21, 1, 2, 4, 529, 100, 8, 3, 5]
+print(bubbleSortAlgo(arr))
